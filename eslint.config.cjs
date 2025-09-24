@@ -3,10 +3,11 @@ const tseslint = require('typescript-eslint');
 const prettier = require('eslint-config-prettier');
 
 module.exports = [
-  { ignores: ['**/*.cjs'] }, // �������� �������������� ����� � CJS
-  js.configs.recommended, // ����� ������� JS
-  ...tseslint.configs.recommended, // ����� ������� TS
-  prettier, // ���������� �������� � Prettier
+  { ignores: ['**/*.cjs', 'dist/**'] },
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+  prettier,
+
   {
     files: ['**/*.ts'],
     languageOptions: {
@@ -15,13 +16,23 @@ module.exports = [
         ecmaVersion: 'latest',
         sourceType: 'module',
       },
+      globals: {
+        process: 'readonly',
+        console: 'readonly',
+        __dirname: 'readonly',
+        __filename: 'readonly',
+        Buffer: 'readonly',
+        setTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearTimeout: 'readonly',
+        clearInterval: 'readonly',
+      },
     },
     plugins: {
       '@typescript-eslint': tseslint.plugin,
     },
-
     rules: {
-      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-explicit-any': 'error',
       'no-unused-vars': 'warn',
     },
   },
