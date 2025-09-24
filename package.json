@@ -2,6 +2,7 @@
   "name": "practical-lesson-2",
   "version": "0.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
