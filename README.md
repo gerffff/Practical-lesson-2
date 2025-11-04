@@ -98,11 +98,20 @@ logger.debug("Деталі діагностики"); // не виводитьс�
 Очікуване значення: число від 0 до 10 (наприклад, 2)<br>
 Опис: кількість десяткових знаків для formatNumber<br><br>
 
-Ключ:LOG_LEVEL	<br>
+Ключ: LOG_LEVEL	<br>
 Очікуване значення: silent, info або debug<br>
 Опис: визначає рівень логування для класу Logger<br>
 
-
+# Посилання на теги релізів
+| Версія | Опис |
+|--------|------|
+| [v0.1.0](https://github.com/gerffff/Practical-lesson-2/releases/tag/v0.1.0) | Створено базові функції |
+| [v0.2.0](https://github.com/gerffff/Practical-lesson-2/releases/tag/v0.2.0) | Додано типи number і string |
+| [v0.3.0](https://github.com/gerffff/Practical-lesson-2/releases/tag/v0.3.0) | Додано formatNumber |
+| [v0.4.0](https://github.com/gerffff/Practical-lesson-2/releases/tag/v0.4.0) | Реалізовано User і groupBy |
+| [v0.5.0](https://github.com/gerffff/Practical-lesson-2/releases/tag/v0.5.0) | Створено Logger, додано .env |
+| [v1.0.0](https://github.com/gerffff/Practical-lesson-2/releases/tag/v1.0.0) | Стабільний API, додано exports |
+| [v2.0.0](https://github.com/gerffff/Practical-lesson-2/releases/tag/v2.0.0) | Breaking change у функції add |
 
 
 
